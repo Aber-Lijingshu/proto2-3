@@ -10,10 +10,7 @@ import java.io.FileOutputStream;
  */
 public class ProtoWriter {
     public static void main(String[] args) throws Exception {
-        // TODO: pull somewhere common and set more then just a string
-        final Proto2.ServiceRequest request = Proto2.ServiceRequest.newBuilder()
-                .setMessage("Testing")
-                .build();
+        final Proto2.ServiceRequest request = ProtoMessage.expectedRequest;
 
         final String filenameBase = args[0];
 

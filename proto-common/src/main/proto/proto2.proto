@@ -2,6 +2,20 @@ package proto2;
 
 message ServiceRequest {
     optional string message = 1;
+    optional double double = 2;
+    optional float float = 3;
+    optional int32 int32 = 4;
+    optional int64 int64 = 5;
+    optional uint32 uint32 = 6;
+    optional uint64 uint64 = 7;
+    optional sint32 sint32 = 8;
+    optional sint64 sint64 = 9;
+    optional fixed32 fixed32 = 10;
+    optional fixed64 fixed64 = 11;
+    optional sfixed32 sfixed32 = 12;
+    optional sfixed64 sfixed64 = 13;
+    optional bool bool = 14;
+    optional bytes bytes = 15;
 }
 
 message ServiceResponse {
