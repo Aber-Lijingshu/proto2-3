@@ -1,6 +1,8 @@
-# Protobuf 2 and 3 Compatability Test
+# Protobuf 2 and 3 Compatibility Test
 
 A simple project that tests serialization / deserialization compatibility between protobuf versions.
+
+## Module Overview
 
 **proto2**
 
@@ -18,7 +20,7 @@ Forces the use of 3.3.0 version of protobuf-java at runtime.
 
 **proto-common**
 
-Common, generated code.
+Generated code and main classes ProtoReader / ProtoWriter.
 
 * protobuf-java: 2.5.0
 * protoc: 2.5.0
