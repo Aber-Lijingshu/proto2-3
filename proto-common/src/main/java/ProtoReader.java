@@ -12,6 +12,7 @@ import java.io.FileOutputStream;
  */
 public class ProtoReader {
     public static void main(String[] args) throws Exception {
+        // TODO: pull somewhere common and set more then just a string
         final Proto2.ServiceRequest expectedRequest = Proto2.ServiceRequest.newBuilder()
                 .setMessage("Testing")
                 .build();
