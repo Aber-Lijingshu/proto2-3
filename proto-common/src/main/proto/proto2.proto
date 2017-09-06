@@ -1,0 +1,19 @@
+package proto2;
+
+message ServiceRequest {
+    optional string message = 1;
+}
+
+message ServiceResponse {
+    optional string message = 1;
+}
+
+service MyService {
+    rpc unary(ServiceRequest) returns (ServiceResponse);
+
+//    rpc pingPong(stream ServiceRequest) returns (stream ServiceResponse);
+//
+//    rpc clientStreaming(stream ServiceRequest) returns (ServiceResponse);
+//
+//    rpc serverStreaming(ServiceRequest) returns (stream ServiceResponse);
+}
